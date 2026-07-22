@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web App</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Your one-page web app is running.</p>
+  <button id="btn">Click me</button>
+  <p id="output"></p>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      document.getElementById('output').textContent = 'Button clicked!';
+    });
+  </script>
+</body>
+</html>
