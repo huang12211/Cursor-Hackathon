@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marrymap — Set up your timeline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">♥</span>
+        Marrymap
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <a href="/checklist">Checklist</a>
+        <a href="/setup">Setup</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section setup-section">
+      <div class="container setup-container">
+        <div class="setup-intro">
+          <h1>Generate your planning timeline</h1>
+          <p>Enter your wedding date and venue to replace the demo — or <a href="/checklist">open the demo checklist</a> with no signup.</p>
+          <a href="/checklist" class="btn btn-primary" style="margin-top: 1rem;">Try demo first</a>
+          <ul class="setup-steps-preview">
+            <li><strong>Week 26:</strong> Budget, guest list, priorities</li>
+            <li><strong>Week 20:</strong> Book photographer, caterer, florist</li>
+            <li><strong>Week 16:</strong> Mail invitations, track RSVPs</li>
+            <li><strong>Week 8:</strong> Seating chart, final confirmations</li>
+            <li><strong>Week 1:</strong> Day-of prep and handoff</li>
+          </ul>
+        </div>
+
+        <form class="setup-form contact-form" id="setup-form">
+          <div class="form-group">
+            <label for="coupleNames">Your names</label>
+            <input type="text" id="coupleNames" name="coupleNames" placeholder="Alex &amp; Sam" required>
+          </div>
+          <div class="form-group">
+            <label for="weddingDate">Wedding date</label>
+            <input type="date" id="weddingDate" name="weddingDate" required>
+            <span class="form-hint">Timeline starts 26 weeks before this date</span>
+          </div>
+          <div class="form-group">
+            <label for="venue">Venue name or type</label>
+            <input type="text" id="venue" name="venue" placeholder="e.g. The Barn at Willow Creek" required>
+          </div>
+          <div class="form-group">
+            <label for="guestCount">Estimated guest count</label>
+            <select id="guestCount" name="guestCount">
+              <option value="under-80">Under 80</option>
+              <option value="80-120" selected>80 – 120</option>
+              <option value="120-200">120 – 200</option>
+              <option value="200+">200+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Generate my checklist</button>
+          <a href="/checklist" class="btn btn-secondary" style="display:block;text-align:center;margin-top:0.5rem;">Continue with demo data</a>
+          <button type="button" class="btn btn-secondary" id="reset-plan">Reset all progress</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-minimal">
+    <div class="footer-bottom">
+      &copy; 2026 Marrymap
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/checklist.js"></script>
+</body>
+</html>

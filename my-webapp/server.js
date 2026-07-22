@@ -6,10 +6,17 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/contact", (req, res) => {
+  res.redirect("/checklist");
+});
+
 const pages = {
   "/": "home.html",
+  "/setup": "setup.html",
+  "/checklist": "checklist.html",
+  "/features": "features.html",
+  "/pricing": "pricing.html",
   "/about": "about.html",
-  "/projects": "projects.html",
   "/contact": "contact.html",
 };
 
@@ -20,5 +27,5 @@ for (const [route, file] of Object.entries(pages)) {
 }
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Marrymap running at http://localhost:${PORT}`);
 });

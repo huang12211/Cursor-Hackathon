@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marrymap — Your checklist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">♥</span>
+        Marrymap
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <a href="/checklist">Checklist</a>
+        <a href="/setup">Setup</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="checklist-main">
+    <div class="container" id="checklist-app"></div>
+  </main>
+
+  <footer class="site-footer site-footer-minimal">
+    <div class="footer-bottom">
+      &copy; 2026 Marrymap
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/timeline-data.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/checklist.js"></script>
+</body>
+</html>

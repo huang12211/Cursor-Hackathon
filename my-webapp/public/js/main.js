@@ -4,7 +4,8 @@
   const currentPath = window.location.pathname;
 
   document.querySelectorAll(".site-nav a").forEach((link) => {
-    if (link.getAttribute("href") === currentPath) {
+    const href = link.getAttribute("href");
+    if (href === currentPath) {
       link.classList.add("active");
     }
   });
